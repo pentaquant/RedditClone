@@ -1,6 +1,7 @@
 <h1>Sign Up</h1>
 
-<form class="" action="index.html" method="post">
+<form class="" action="{% url 'signup' %}" method="POST">
+  {% csrf_token %}
   Username
   <br>
   <input type="text" name="username">
